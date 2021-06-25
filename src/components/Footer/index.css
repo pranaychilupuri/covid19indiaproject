@@ -1,0 +1,50 @@
+.footer-container {
+  padding-top: 70px;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  background-color: #161625;
+}
+
+.title {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #f8fafc;
+}
+.india-text {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  color: blue;
+}
+.para-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #94a3b8;
+}
+.reddit-logo {
+  height: 46px;
+  width: 42px;
+  padding: 15px;
+}
+.insta-logo {
+  height: 50px;
+  width: 47px;
+  padding: 15px;
+}
+.twitter-logo {
+  height: 40px;
+  width: 49px;
+  padding: 15px;
+}
