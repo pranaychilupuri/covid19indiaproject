@@ -34,12 +34,12 @@ const statesList = [
     state_name: 'Chhattisgarh',
   },
   {
-    state_code: 'DN',
-    state_name: 'Dadra and Nagar Haveli and Daman and Diu',
-  },
-  {
     state_code: 'DL',
     state_name: 'Delhi',
+  },
+  {
+    state_code: 'DN',
+    state_name: 'Dadra and Nagar Haveli and Daman and Diu',
   },
   {
     state_code: 'GA',
@@ -126,12 +126,12 @@ const statesList = [
     state_name: 'Sikkim',
   },
   {
-    state_code: 'TN',
-    state_name: 'Tamil Nadu',
-  },
-  {
     state_code: 'TG',
     state_name: 'Telangana',
+  },
+  {
+    state_code: 'TN',
+    state_name: 'Tamil Nadu',
   },
   {
     state_code: 'TR',
@@ -177,7 +177,7 @@ class Home extends Component {
     })
   }
 
-  searchResults = event => {
+  updateSearchInput = event => {
     const searchUser = event.target.value
     const searchResults = statesList.filter(eachState =>
       eachState.state_name.toLowerCase().includes(searchUser.toLowerCase()),
@@ -187,7 +187,7 @@ class Home extends Component {
     })
   }
 
-  renderSearchData = event => {
+  renderSearchDat = event => {
     const searchDataEl = document.getElementById('searchData')
     searchDataEl.value = event.target.textContent
   }
@@ -202,11 +202,11 @@ class Home extends Component {
     searchContainerEl.style.display = 'block'
   }
 
-  renderData() {
+  renderData = () => {
     const {searchInput} = this.state
 
     return (
-      <ul id="search-container" className="search-bar-container">
+      <ul id="searchContainer" className="search-bar-container">
         {searchInput.map(eachState => (
           <Link
             to={`/${eachState.state_name}/${eachState.state_code}`}
@@ -296,16 +296,16 @@ class Home extends Component {
           <p className="list-state">Population</p>
         </div>
 
-        <ul className="list-card">
+        <div className="">
           {Object.keys(covid19IndiaDetails).map((key, index) => (
             <Link
-              to={`/${this.returnNameOfState(index)}/${key}`}
+              to={`/${this.renderNameOfState(index)}/${key}`}
               key={key}
               className="link-card"
             >
               <li className="list-state-item">
                 <p className="list-state statename">
-                  {this.returnNameOfState(index)}
+                  {this.renderNameOfState(index)}
                 </p>
                 <p className="list-state confirmed-container">
                   {covid19IndiaDetails[key].total.confirmed}
@@ -325,7 +325,7 @@ class Home extends Component {
               </li>
             </Link>
           ))}
-        </ul>
+        </div>
       </div>
     )
   }
@@ -362,7 +362,9 @@ class Home extends Component {
     const {isConfirmedCases} = this.state
     return (
       <div className="home-container">
-        {isConfirmedCases ? this.renderIndiaCasesList() : this.renderSpinner()}
+        {isConfirmedCases
+          ? this.renderCovid19IndiaSearchBar()
+          : this.renderSpinner()}
       </div>
     )
   }

@@ -53,7 +53,7 @@ class StateList extends Component {
 
     const spreadTrendsTotalDataArr = Object.keys(
       spreadTrendsTotalData[0],
-    ).map(newDate => [newDate, spreadTrendsData[0][newDate]])
+    ).map(date => [date, spreadTrendsTotalData[0][date]])
 
     const prevThreeMonthsData = spreadTrendsTotalDataArr.slice(
       spreadTrendsTotalDataArr.length - 90,

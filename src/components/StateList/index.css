@@ -1,232 +1,237 @@
 .state-page-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family:"Roboto";
-    min-height: 90vh;
-    padding: 24px;
-    background-color: #161625;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #161625;
 }
 @media screen and (min-width: 768px) {
-    .state-page-container {
-        padding: 0px 170px;
-    }
+  .state-page-container {
+    padding: 0px 170px;
+  }
 }
 .button {
-    background-color: transparent;
-    transition: background 100ms ease-in-out;
-    cursor: pointer;
-    border: none;
-    outline: none;
+  background-color: transparent;
+  transition: background 100ms ease-in-out;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 .tested-button:hover {
-    background-color: #132240;
+  background-color: #132240;
 }
 .recovered-button:hover {
-    background-color: #182829;
+  background-color: #182829;
 }
 .deceased-button:hover {
-    background-color: #212230;
+  background-color: #212230;
 }
 .confirmed-button:hover {
-    background-color: #331427;
+  background-color: #331427;
 }
 .spinner-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }
 .confirmed-background {
-    background-color: #331427;
-  }
+  background-color: #331427;
+}
 .active-background {
-    background-color: #132240;
+  background-color: #132240;
 }
 .recovered-background {
-    background-color: #182829;
+  background-color: #182829;
 }
 .deceased-background {
-    background-color: #212230;
+  background-color: #212230;
 }
 .state-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
 }
 .state-details-update-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px;
-    height: 100px;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  height: 100px;
+  align-items: flex-start;
 }
 @media screen and (min-width: 768px) {
-    .state-details-update-container {
-        margin-top: 60px;
-    }
+  .state-details-update-container {
+    margin-top: 60px;
+  }
 }
 .state-heading {
-    display: inline-block;
-    color: #0ea5e9;
-    background-color: rgba(2, 132, 199, 0.16);
-    margin: 0px;
-    padding: 6px 32px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 32px;
+  display: inline-block;
+  color: #0ea5e9;
+  background-color: rgba(2, 132, 199, 0.16);
+  margin: 0px;
+  padding: 6px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 32px;
 }
 @media screen and (min-width: 768px) {
-    .state-heading {
-        font-size: 32px;
-        font-weight: 600;
-    }
+  .state-heading {
+    font-size: 32px;
+    font-weight: 600;
+  }
 }
 .date-text {
-    font-size: 12px;
-    color: #cbd5e1;
+  font-size: 12px;
+  color: #cbd5e1;
 }
 @media screen and (min-width: 768px) {
-    .date-text {
-        color: #cbd5e1;
-        font-size: 16px;
-    }
+  .date-text {
+    color: #cbd5e1;
+    font-size: 16px;
+  }
 }
 .tested-samples-text {
-    color: #94a3b8;
-    text-align: right;
-    margin: 0px;
-    width: 100%;
-    font-size: 12px;
+  color: #94a3b8;
+  text-align: right;
+  margin: 0px;
+  width: 100%;
+  font-size: 12px;
 }
 @media screen and (min-width: 768px) {
-    .tested-samples-text {
-        font-size: 16px;
-    }
+  .tested-samples-text {
+    font-size: 16px;
+  }
 }
 .tested-samples-count {
-    color: #94a3b8;
-    text-align: right;
-    margin: 8px;
-    width: 100%;
-    font-size: 14px;
+  color: #94a3b8;
+  text-align: right;
+  margin: 8px;
+  width: 100%;
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
-    .tested-samples-count {
-        font-size: 24px;
-    }
+  .tested-samples-count {
+    font-size: 24px;
+  }
 }
 .card-title {
-    font-size: 12px;
-    font-weight: 500;
+  font-size: 12px;
+  font-weight: 500;
+  color: ;
 }
 @media screen and (min-width: 768px) {
-    .card-title {
-        font-size: 16px;
-    }    
+  .card-title {
+    font-size: 16px;
+  }
 }
 .card-count {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 @media screen and (min-width: 768px) {
-    .card-count {
-        font-size: 24px;
-    }    
+  .card-count {
+    font-size: 24px;
+  }
 }
 .card-container {
-    margin-top: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .district-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 45px;
-    padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 45px;
+  padding: 0px;
 }
 @media screen and (min-width: 768px) {
-    .district-container{
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0px;
-    }    
+  .district-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+  }
 }
 .districts-list {
-    display: flex;
-    align-items: center;
-    margin: 1px 9px;
-    width: 45%;
-    color: #94a3b8;
-    padding: 0px;
+  display: flex;
+  align-items: center;
+  margin: 1px 9px;
+  width: 45%;
+  color: #94a3b8;
+  padding: 0px;
 }
 @media screen and (min-width: 768px) {
-    .districts-list {
-        display: flex;
-        width: 20%;
-        margin: 1px 9px;        
-    }    
+  .districts-list {
+    display: flex;
+    width: 20%;
+    margin: 1px 9px;
+  }
 }
 .district-number {
-    width: 30%;
-    color: #94a3b8;
-    font-weight: 500;
-    margin-right: 6px;
-    font-size: 16px
+  width: 30%;
+  color: #94a3b8;
+  font-weight: 500;
+  margin-right: 6px;
+  font-size: 16px;
 }
 @media screen and (min-width: 768px) {
-    .district-number {
-        font-size: 24px;
-    }
+  .district-number {
+    font-size: 24px;
+  }
 }
 .district-name {
-    color: #94a3b8;
-    width: 70%;
-    font-size: 12px;
-    padding-left: 5px;
+  color: #94a3b8;
+  width: 70%;
+  font-size: 12px;
+  padding-left: 5px;
 }
 @media screen and (min-width: 768px) {
-    .district-name {
-        padding-left: 20px;
-        font-size: 16px;
-    }    
+  .district-name {
+    padding-left: 20px;
+    font-size: 16px;
+  }
 }
 .district-name-heading {
-    color: #ff073a;
-    font-size: 24px;
-    margin-bottom: 0px;
-    font-weight: 500;
-    width: 100%;
+  color: #ff073a;
+  font-size: 24px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
-    .district-name-heading {
-        font-size: 32px;
-    }
+  .district-name-heading {
+    font-size: 32px;
+  }
 }
 .line-graph-container {
-    width: 100%;
-    color: #cbd5e1;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  width: 100%;
+  color: #cbd5e1;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .spread-trend-heading {
-    font-weight: 500;
-    font-size: 24px;
-    margin: 0px;
-    margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0px;
+  margin-bottom: 7px;
 }
 .spread-trend-button {
-    width: 30%;
-    padding: 10px;
-    margin: 3px;
-    background-color: #1c1c2b;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    color: #64748b;
-    border-radius: 3px;
+  width: 30%;
+  padding: 10px;
+  margin: 3px;
+  background-color: #1c1c2b;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #64748b;
+  border-radius: 3px;
 }

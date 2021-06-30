@@ -4,6 +4,11 @@
   background: #161625;
   padding-left: 150px;
 }
+@media screen and (min-width: 768px) {
+  .about-container {
+    padding-left: 20px;
+  }
+}
 
 .about-heading {
   font-family: 'Roboto';
@@ -13,9 +18,10 @@
   padding-top: 35px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .about-heading {
     font-size: 64px;
+    padding-top: 50px;
   }
 }
 

@@ -2,6 +2,7 @@ dependencies:
   '@testing-library/jest-dom': 5.11.9
   '@testing-library/react': 11.2.5_react-dom@17.0.1+react@17.0.1
   '@testing-library/user-event': 12.6.2
+  bootstrap-icons: 1.5.0
   chalk: 4.1.0
   chart.js: 3.3.2
   material-ui: 0.20.2_react-dom@17.0.1+react@17.0.1
@@ -3397,6 +3398,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+  /bootstrap-icons/1.5.0:
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-44feMc7DE1Ccpsas/1wioN8ewFJNquvi5FewA06wLnqct7CwMdGDVy41ieHaacogzDqLfG8nADIvMNp9e4bfbA==
   /bowser/1.9.4:
     dev: false
     resolution:
@@ -13340,6 +13347,7 @@ specifiers:
   '@testing-library/jest-dom': 5.11.9
   '@testing-library/react': 11.2.5
   '@testing-library/user-event': 12.6.2
+  bootstrap-icons: 1.5.0
   chalk: 4.1.0
   chart.js: 3.3.2
   eslint-config-airbnb: 18.2.1
